@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg py-2 bg-body-tertiary border-bottom">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link link-body-emphasis px-3" href="#">Charging Locator</a>
+            <span class="tooltip-text">Find nearby charging stations</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-body-emphasis px-3" href="#">Accounts</a>
+            <span class="tooltip-text">Manage your account</span>
+          </li>
+        </ul>
+        
+        <form class="d-flex" role="search">
+          <div class="dropdown">
+            <button class="btn btn-outline-primary border rounded-pill dropdown-toggle d-flex align-items-center p-1 pe-2" 
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="Profile">
+                Sanskar
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  <div class="main">
+    <h1>Ever growing charging network in India</h1>
+  </div>
+  <div class="man">
+    <p>With 14,000+ charging stations across the country, you can rest assured that we will have your journey covered. We also offer 24x7 emergency charging support in five cities as part of our seamless charging experience.</p>
+  </div>
+
+
+
+  <div class="googlemapapi">
+    <div class="search">
+      <div class="search2">
+        <h1>Find your nearest charging location</h1>
+      </div>
+      <div class="search3">
+        <input type="search" class="inline-search" id="location-search" name="gsearch" placeholder="Enter town, city, PIN">
+        <i class='bx bx-search'></i>
+      </div>
+      <div class="scroll">
+        <div class="row">
+          
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="Charge Zone">Charging zone</h4>
+              <p>Kharar,Bustand</p>
+              <h4 id="PowerGrid">PowerGrid</h4>
+              <p>Mohali,Phase-2</p>
+              <h4 id="Service">Service</h4>
+              <p>Mohali,near Landran road</p>
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.206252986747!2d76.57279697544242!3d30.76879017456685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb140bd63e07%3A0x68591e334d17a988!2sChandigarh%20University!5e0!3m2!1sen!2sin!4v1739902173930!5m2!1sen!2sin" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> <!-- Map container -->
+  </div>
+
+
+
+
+<div class="lowbar">
+<div class="contact">
+  <h2>CONTACT</h2>
+  <i class='bx bxl-instagram'></i>
+  <i class='bx bxl-facebook'></i>
+  <i class='bx bxl-pinterest' ></i>
+  <i class='bx bxl-twitter' ></i>
+</div>
+<div class="link">
+  <a href="#">Privacy policy</a>
+</div>
+<div class="link">
+  <a href="#">Terms and Condition</a>
+</div>
+</div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
+</body>
+</html>

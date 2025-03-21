@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif ;
+    font-style: bold;
+    
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item .tooltip-text {
+    position: absolute;
+    bottom: 100%; /* Position above the text */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nav-item:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main {
+    justify-content: center;
+    display: flex;
+    padding-top: 60px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    
+    
+}
+
+.man {
+    justify-content: center;
+    display: flex;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 20.5px;
+}
+
+.googlemapapi {
+    display: flex;
+    padding: 150px;
+    gap: 20px;
+    
+}
+
+.search {
+    background-color: rgb(171, 172, 172);
+    padding: 20px;
+    width: 30%; /* Adjust width as needed */
+}
+
+#map {
+    height: 500px;
+    width: 70%; /* Adjust width as needed */
+    border: 1px solid #ccc;
+}
+
+.search3{
+    background-color: rgb(171, 172, 172);
+}
+
+
+.lowbar{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+   
+    display: flexbox;
+    
+}
+.link a{
+    color: rgb(183, 183, 183);
+    display: flex;
+    justify-content: center;
+}
+
+.contact i { 
+     font-size: 20px;
+}
